@@ -1,0 +1,651 @@
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f6f8fb;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --accent: #1d4ed8;
+  --accent-dark: #1e3a8a;
+
+  --max-width: 1400px;
+}
+
+/* =========================
+   Base
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.container {
+  width: min(var(--max-width), calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+  padding: 42px 0 36px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(29, 78, 216, 0.06),
+      rgba(255, 255, 255, 0)
+    ),
+    var(--bg-soft);
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+
+  width: 100%;
+  max-width: 1250px;
+}
+
+.praw-logo {
+  display: block;
+
+  width: 600px;
+  max-width: 60%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+.hero-event {
+  min-width: 280px;
+  text-align: left;
+}
+
+.edition {
+  margin: 0 0 18px;
+
+  color: var(--text);
+
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.wacv-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  margin-bottom: 16px;
+}
+
+.wacv-row span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.wacv-logo {
+  display: block;
+
+  width: 190px;
+  height: auto;
+
+  object-fit: contain;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+
+  width: 100%;
+  max-width: 1100px;
+}
+
+.workshop-date {
+  width: 100%;
+
+  margin: 28px 0 0;
+
+  text-align: center;
+
+  color: var(--text);
+  opacity: 0.85;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 22px;
+  flex-wrap: wrap;
+
+  min-height: 64px;
+  padding: 10px 0;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* =========================
+   Main content
+========================= */
+
+main {
+  padding: 0 0 70px;
+}
+
+section {
+  position: relative;
+
+  padding: 55px 0;
+
+  border-bottom: 1px solid var(--border);
+
+  scroll-margin-top: 85px;
+}
+
+section:last-child {
+  border-bottom: 0;
+}
+
+section h2 {
+  margin: 0 0 24px;
+
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+section p {
+  max-width: none;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   Alternating sections
+========================= */
+
+section:nth-of-type(even)::before {
+  content: "";
+
+  position: absolute;
+  inset: 0 calc(50% - 50vw);
+
+  z-index: -1;
+
+  background: var(--bg-soft);
+}
+
+/* =========================
+   Call for Papers
+========================= */
+
+.topic-list {
+  margin: 28px 0;
+  padding-left: 24px;
+
+  columns: 2;
+  column-gap: 60px;
+}
+
+.topic-list li {
+  margin-bottom: 12px;
+  padding-right: 20px;
+
+  line-height: 1.6;
+
+  break-inside: avoid;
+}
+
+/* =========================
+   Challenge
+========================= */
+
+#challenge h2 {
+  color: var(--accent-dark);
+}
+
+/* =========================
+   Info boxes
+========================= */
+
+.info-box {
+  margin-top: 28px;
+  padding: 22px 24px;
+
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+
+  background: var(--bg-soft);
+}
+
+.info-box p {
+  margin: 8px 0 0;
+}
+
+/* =========================
+   Dates
+========================= */
+
+.dates-table {
+  width: 100%;
+  max-width: 900px;
+
+  margin-top: 28px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: var(--bg);
+}
+
+.date-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 17px 20px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.date-row:last-child {
+  border-bottom: 0;
+}
+
+.small-note {
+  margin-top: 15px;
+
+  color: var(--muted);
+
+  font-size: 0.9rem;
+}
+
+/* =========================
+   Speakers & Organizers
+========================= */
+
+.organizer-grid,
+.speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 38px 28px;
+
+  margin-top: 34px;
+}
+
+.organizer,
+.speaker {
+  text-align: center;
+}
+
+.organizer-photo,
+.speaker-photo {
+  display: block;
+
+  width: 180px;
+  height: 180px;
+
+  margin: 0 auto 18px;
+
+  object-fit: cover;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+}
+
+.organizer h3,
+.speaker h3 {
+  margin: 0 0 6px;
+
+  font-size: 1.1rem;
+}
+
+.affiliation {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.95rem;
+}
+
+.talk-title {
+  max-width: 240px;
+
+  margin: 10px auto 0;
+
+  color: var(--accent-dark);
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+/* =========================
+   Program Committee
+========================= */
+
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 60px;
+  row-gap: 0;
+
+  margin-top: 30px;
+}
+
+.committee-member {
+  padding: 18px 0;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.committee-member h3 {
+  margin: 0 0 4px;
+
+  font-size: 1.05rem;
+}
+
+.committee-member p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Contact
+========================= */
+
+#contact p:last-child {
+  display: inline-block;
+
+  margin-top: 8px;
+  padding: 12px 16px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  background: var(--bg-soft);
+
+  font-family: Consolas, "Courier New", monospace;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+  padding: 34px 0;
+
+  border-top: 1px solid var(--border);
+
+  text-align: center;
+
+  color: var(--muted);
+  background: var(--bg-soft);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 1000px) {
+  .container {
+    width: min(var(--max-width), calc(100% - 50px));
+  }
+
+  .hero-branding {
+    gap: 40px;
+  }
+
+  .praw-logo {
+    width: 520px;
+    max-width: 58%;
+  }
+
+  .organizer-grid,
+  .speaker-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* =========================
+   Small tablet
+========================= */
+
+@media (max-width: 800px) {
+  .hero-branding {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .praw-logo {
+    width: min(480px, 100%);
+    max-width: 100%;
+  }
+
+  .hero-event {
+    min-width: 0;
+    text-align: center;
+  }
+
+  .wacv-row {
+    align-items: center;
+  }
+
+  .nav-links {
+    justify-content: flex-start;
+
+    gap: 12px 18px;
+
+    min-height: auto;
+    padding: 14px 0;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .organizer-grid,
+  .speaker-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-list {
+    columns: 1;
+  }
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 520px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .hero {
+    padding: 30px 0;
+  }
+
+  .praw-logo {
+    width: 100%;
+  }
+
+  .wacv-logo {
+    width: 165px;
+  }
+
+  .edition {
+    font-size: 1.1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 42px 0;
+  }
+
+  section h2 {
+    margin-bottom: 20px;
+  }
+
+  .organizer-grid,
+  .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .organizer-photo,
+  .speaker-photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .date-row {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 4px;
+  }
+}
+
+/* =========================
+   Program / Schedule
+========================= */
+
+.program-list {
+  margin-top: 28px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 750px;
+}
+
+.program-item {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+}
+
+.program-item:last-child {
+  border-bottom: none;
+}
+
+.program-item:hover {
+  background: var(--bg-soft);
+}
+
+.program-time {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: Consolas, "Courier New", monospace;
+  white-space: nowrap;
+}
+
+.program-text {
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* highlight breaks differently */
+.program-item.break .program-text {
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (max-width: 520px) {
+  .program-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
+

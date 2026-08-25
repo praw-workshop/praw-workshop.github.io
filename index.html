@@ -2,11 +2,492 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>PRAW Workshop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PRAW Workshop @ WACV</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <h1>PRAW Workshop</h1>
-  <p>Official website of the PRAW workshop series.</p>
+
+  <header class="hero">
+    <div class="container hero-inner">
+
+      <div class="hero-branding">
+
+        <img
+          src="assets/logos/praw-logo.png"
+          alt="PRAW - Physical Retail AI Workshop"
+          class="praw-logo"
+        >
+
+        <div class="hero-event">
+
+          <div class="wacv-row">
+            <span>4th Edition, in conjunction with</span>
+
+            <a
+              href="https://wacv.thecvf.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="wacv-link"
+            >
+              <img
+                src="assets/logos/wacv-logo.svg"
+                alt="WACV 2027 Conference"
+                class="wacv-logo"
+              >
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <p class="workshop-date">
+        January 4 or 5 (half-day), 2027 · Disney Springs, Buena Vista, FL
+      </p>
+
+    </div>
+  </header>
+
+  <nav>
+    <div class="container nav-links">
+      <a href="#about">About</a>
+      <a href="#cfp">Call for Papers</a>
+      <a href="#challenge">Challenge</a>
+      <a href="#dates">Important Dates</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#program">Program</a>
+      <a href="#committee">Program Committee</a>
+      <a href="#organizers">Organizers</a>
+      <a href="https://grocery-vision.github.io/">Past</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section id="about">
+      <h2>About PRAW</h2>
+
+      <p>
+        Computer vision is rapidly emerging as the foundational intelligence layer 
+        for physical retail. The sector’s projected growth, from USD 4.23 billion 
+        in 2025 to USD 12.19 billion by 2030 (23.5% CAGR), underscores an accelerating 
+        demand for visual understanding in stores, warehouses, and last-mile environments.
+      </p>
+
+      <p>
+        Yet despite this momentum, physical retail remains one of the most demanding 
+        real-world testbeds for computer vision: unconstrained lighting, heavy occlusion, 
+        extreme intra-class similarity (e.g., thousands of near-identical SKUs), 
+        long-tailed distributions, and the need for real-time inference at the edge all push
+        the boundaries of current methods.
+      </p>
+
+      <p>
+        Crucially, these systems must operate while maintaining a seamless customer experience: 
+        perception must be ambient, non-intrusive, and privacy-respecting, placing additional
+        constraints on sensing modalities, model latency, and system design. Adding to this complexity, 
+        a new generation of platforms is bringing vision directly into physical retail - including 
+        inventory robots, smart carts, augmented reality devices, smart checkout stations - 
+        creating a new frontier of challenges.
+      </p>
+
+      <p>
+        This workshop will bridge academia and industry by convening researchers and practitioners who 
+        are advancing these topics in the retail domain, featuring invited talks from leading groups, 
+        peer-reviewed paper presentations, and a public challenge designed to promote reproducible 
+        evaluation on retail-specific benchmarks.
+      </p>
+    </section>
+
+    <section id="cfp">
+      <h2>Call for Papers</h2>
+
+      <p>
+        We invite original research contributions addressing computer vision
+        and artificial intelligence for physical retail and related real-world
+        environments.
+      </p>
+
+      <p>Topics of interest include, but are not limited to:</p>
+
+      <ul class="topic-list">
+        <li>
+          Human behavior understanding in retail and physical environments, 
+          including for example action recognition, 
+          shopping activity understanding or people tracking
+        </li>
+
+        <li>
+          Product detection, tracking, recognition, and retrieval for retail environments
+        </li>
+
+        <li>
+          Scene understanding, indoor localization, and spatial reasoning in retail environments
+        </li>
+
+        <li>
+          Vision-language, foundation, and generative AI models for retail applications
+        </li>
+
+        <li>
+          Open-vocabulary, zero-/few-shot, continual, and open-world learning
+        </li>
+
+        <li>
+          Efficient AI systems for real-world deployment, including edge inference, 
+          resource-constrained setups, and scalable installations
+        </li>
+
+        <li>
+          Synthetic data generation, simulation, digital twins, datasets, benchmarks, 
+          and evaluation protocols
+        </li>
+      </ul>
+      <h3>Submission Guidelines</h3>
+      <p>
+        We welcome submissions of regular papers following the same formatting
+        and submission guidelines as the main conference. All accepted papers
+        will be published in the official conference workshop proceedings.
+      </p>
+
+      <p>
+        Authors of accepted papers will be invited to present their work either
+        as an oral presentation or as a poster during the workshop.
+      </p>
+
+      <p>
+        All submissions will undergo a double-blind peer-review process by at
+        least three reviewers.
+      </p>
+
+      <div class="info-box">
+        <strong>Submission portal:</strong> Coming soon
+      </div>
+    </section>
+
+    <section id="challenge">
+      <h2>Challenge</h2>
+
+      <p>
+        PRAW 2027 will feature a public challenge designed to promote
+        reproducible evaluation on retail-specific benchmarks.
+      </p>
+
+      <div class="info-box">
+        <strong>Challenge details coming soon.</strong>
+        <p>
+          Tasks, datasets, evaluation metrics, timeline, and participation
+          instructions will be announced here.
+        </p>
+      </div>
+    </section>
+
+    <section id="dates">
+      <h2>Important Dates</h2>
+
+      <div class="dates-table">
+
+        <div class="date-row">
+          <span>Paper submission deadline</span>
+          <strong>TBA</strong>
+        </div>
+
+        <div class="date-row">
+          <span>Notification of acceptance</span>
+          <strong>TBA</strong>
+        </div>
+
+        <div class="date-row">
+          <span>Camera-ready deadline</span>
+          <strong>TBA</strong>
+        </div>
+
+        <div class="date-row">
+          <span>Challenge deadline</span>
+          <strong>TBA</strong>
+        </div>
+
+        <div class="date-row">
+          <span>Workshop</span>
+          <strong>TBA</strong>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="speakers">
+      <h2>Invited Speakers (Tentative)</h2>
+
+      <div class="speaker-grid">
+
+        <article class="speaker">
+          <img
+            src="assets/images/speakers/alessia-saggese.jpg"
+            alt="Alessia Saggese"
+            class="speaker-photo"
+          >
+          <h3>Alessia Saggese</h3>
+          <p class="affiliation">University of Salerno</p>
+          <p class="talk-title">TDB</p>
+        </article>
+
+        <article class="speaker">
+          <img
+            src="assets/images/speakers/dave-wollard.jpg"
+            alt="Dave Wollard"
+            class="speaker-photo"
+          >
+          <h3>Dave Wollard</h3>
+          <p class="affiliation">Standard AI</p>
+          <p class="talk-title">TBD</p>
+        </article>
+
+        <article class="speaker">
+          <img
+            src="assets/images/speakers/vinod-kulathumani.jpg"
+            alt="Vinod Kulathumani"
+            class="speaker-photo"
+          >
+          <h3>Vinod Kulathumani</h3>
+          <p class="affiliation">Amazon</p>
+          <p class="talk-title">TBD</p>
+        </article>
+
+        <article class="speaker">
+          <img
+            src="assets/images/speakers/arnab-dhua.jpg"
+            alt="Arnab Dhua"
+            class="speaker-photo"
+          >
+          <h3>Arnab Dhua</h3>
+          <p class="affiliation">Amazon</p>
+          <p class="talk-title">TBD</p>
+        </article>
+
+        <article class="speaker">
+          <img
+            src="assets/images/speakers/tian-lan.jpg"
+            alt="Tian Lan"
+            class="speaker-photo"
+          >
+          <h3>Tian Lan</h3>
+          <p class="affiliation">Amazon</p>
+          <p class="talk-title">TBD</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="program">
+      <h2>Program</h2>
+
+      <p>
+        PRAW 2027 will be a half-day workshop. The preliminary program includes:
+      </p>
+
+      <div class="program-list">
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Introduction</span>
+        </div>
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Invited Speaker 1</span>
+        </div>
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Paper Session 1</span>
+        </div>
+        <div class="program-item break">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Coffee Break</span>
+        </div>
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Invited Speaker 2</span>
+        </div>
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Invited Speaker 3</span>
+        </div>
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Paper Session 2</span>
+        </div>
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Invited Speaker 4</span>
+        </div>
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Challenge</span>
+        </div>
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Invited Speaker 5</span>
+        </div>
+        <div class="program-item">
+          <span class="program-time">00:00 – 00:00</span>
+          <span class="program-text">Conclusion</span>
+        </div>
+      </div>
+
+      <p class="small-note">
+        The detailed schedule and presentation times will be announced later.
+      </p>
+    </section>
+
+    <section id="committee">
+      <h2>Program Committee</h2>
+
+      <div class="committee-grid">
+
+        <div class="committee-member">
+          <h3>Mauro Bellone</h3>
+          <p>Associate Professor · Universitas Mercatorum</p>
+        </div>
+
+        <div class="committee-member">
+          <h3>Riccardo Rosati</h3>
+          <p>Assistant Professor · University of Macerata</p>
+        </div>
+
+        <div class="committee-member">
+          <h3>Emanuele Balloni</h3>
+          <p>Postdoctoral Researcher · Università Politecnica delle Marche</p>
+        </div>
+
+        <div class="committee-member">
+          <h3>Alessandro Bruno</h3>
+          <p>Associate Professor · IULM University</p>
+        </div>
+
+        <div class="committee-member">
+          <h3>Abhay Doke</h3>
+          <p>Senior Applied Scientist · Amazon</p>
+        </div>
+
+        <div class="committee-member">
+          <h3>Jiajing Chen</h3>
+          <p>Applied Scientist · Amazon</p>
+        </div>
+
+        <div class="committee-member">
+          <h3>Jimmy Jiang</h3>
+          <p>Data Scientist · Amazon</p>
+        </div>
+
+        <div class="committee-member">
+          <h3>Yuxing Tang</h3>
+          <p>Applied Scientist · Amazon</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="organizers">
+      <h2>Organizers</h2>
+
+      <div class="organizer-grid">
+
+        <article class="organizer">
+          <img
+            src="assets/images/organizers/rocco-pietrini.jpg"
+            alt="Rocco Pietrini"
+            class="organizer-photo"
+          >
+          <h3>Rocco Pietrini</h3>
+          <p class="affiliation">Universitas Mercatorum</p>
+        </article>
+
+        <article class="organizer">
+          <img
+            src="assets/images/organizers/marina-paolanti.jpg"
+            alt="Marina Paolanti"
+            class="organizer-photo"
+          >
+          <h3>Marina Paolanti</h3>
+          <p class="affiliation">University of Macerata</p>
+        </article>
+
+        <article class="organizer">
+          <img
+            src="assets/images/organizers/davide-mazzini.jpg"
+            alt="Davide Mazzini"
+            class="organizer-photo"
+          >
+          <h3>Davide Mazzini</h3>
+          <p class="affiliation">Standard AI</p>
+        </article>
+
+        <article class="organizer">
+          <img
+            src="assets/images/organizers/bruno-abbate.jpg"
+            alt="Bruno Abbate"
+            class="organizer-photo"
+          >
+          <h3>Bruno Abbate</h3>
+          <p class="affiliation">Standard AI</p>
+        </article>
+
+        <article class="organizer">
+          <img
+            src="assets/images/organizers/dave-wollard.jpg"
+            alt="Dave Wollard"
+            class="organizer-photo"
+          >
+          <h3>Dave Wollard</h3>
+          <p class="affiliation">Standard AI</p>
+        </article>
+
+        <article class="organizer">
+          <img
+            src="assets/images/organizers/vinod-kulathumani.jpg"
+            alt="Vinod Kulathumani"
+            class="organizer-photo"
+          >
+          <h3>Vinod Kulathumani</h3>
+          <p class="affiliation">Amazon</p>
+        </article>
+
+        <article class="organizer">
+          <img
+            src="assets/images/organizers/yirui-wang.jpg"
+            alt="Yirui Wang"
+            class="organizer-photo"
+          >
+          <h3>Yirui Wang</h3>
+          <p class="affiliation">Amazon</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        For enquiries about submissions, the programme, the challenge,
+        or collaboration, please contact:
+      </p>
+
+      <p class="contact-email">
+        rocco dot pietrini @ unimercatorum dot it
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>PRAW Workshop</p>
+    </div>
+  </footer>
+
 </body>
 </html>
