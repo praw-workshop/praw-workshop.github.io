@@ -649,3 +649,50 @@ footer p {
   }
 }
 
+/* =========================
+   Deadline extension
+========================= */
+
+.deadline-banner {
+  padding: 12px 0;
+  background: var(--accent-dark);
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.deadline-banner a {
+  margin-left: 12px;
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.date-row.highlight {
+  background: #fef3c7;
+  border-left: 4px solid #d97706;
+}
+
+.old-date {
+  margin-right: 10px;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.badge {
+  margin-left: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #d97706;
+  color: #fff;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.extended-note {
+  margin: 0 0 10px;
+  color: #b45309;
+  font-size: 1.1rem;
+}
